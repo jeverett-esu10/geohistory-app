@@ -1,0 +1,275 @@
+<title>GeoHistory Fun! Sample Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap">
+<style>
+/* Layout: a poster-style header band with a world map of pins, then a sticky control bar and one card per place. */
+:root {
+  --paper: #F3F6FB; --card: #FFFFFF; --ink: #14213D; --muted: #55607A; --line: #D7DEEA;
+  --band: #14213D; --band-fg: #FFFFFF; --band-muted: #B8C3DA;
+  --sun: #F4B400; --prairie: #C8402A; --sky: #2563C9; --teal: #0E7475;
+  --good: #1D7A3A; --good-bg: #E5F4EA; --warn-bg: #FFF4D1; --warn-fg: #6B4E00;
+  --sea: #1E2F55; --land: #3D5285; --grat: #26396A;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --r: 14px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #0E1424; --card: #161F35; --ink: #EBF0F8; --muted: #A6B1C8; --line: #283553;
+  --band: #0A1020; --band-fg: #F3F6FB; --band-muted: #A6B1C8;
+  --sun: #FFC93C; --prairie: #FF7B5E; --sky: #7FA9FF; --teal: #46C2C2;
+  --good: #6FD68E; --good-bg: #133222; --warn-bg: #3A2F0C; --warn-fg: #FFD978;
+  --sea: #121C33; --land: #33456F; --grat: #1A2643; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #0E1424; --card: #161F35; --ink: #EBF0F8; --muted: #A6B1C8; --line: #283553;
+  --band: #0A1020; --band-fg: #F3F6FB; --band-muted: #A6B1C8;
+  --sun: #FFC93C; --prairie: #FF7B5E; --sky: #7FA9FF; --teal: #46C2C2;
+  --good: #6FD68E; --good-bg: #133222; --warn-bg: #3A2F0C; --warn-fg: #FFD978;
+  --sea: #121C33; --land: #33456F; --grat: #1A2643; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--paper); color: var(--ink); font: 17px/1.55 var(--body) }
+.wrap { max-width: 1040px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+a { color: var(--sky) }
+:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; line-height: 1.1; margin: 0 }
+
+/* Header band */
+.band { background: var(--band); color: var(--band-fg) }
+.band .wrap { padding-block: 36px 28px; display: grid; gap: 20px }
+.eyebrow { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--sun); font-weight: 700 }
+h1 { font-size: clamp(42px, 8vw, 84px); font-weight: 800; letter-spacing: -.02em }
+h1 span { color: var(--sun) }
+.lede { color: var(--band-muted); max-width: 60ch; margin: 0 }
+.map { width: 100%; height: auto; display: block }
+.map .sea { fill: var(--sea) } .map .land { fill: var(--land) } .map .grat { fill: none; stroke: var(--grat); stroke-width: .6 }
+.pin circle { stroke: var(--band); stroke-width: 2 }
+.pin.us circle { fill: var(--prairie) } .pin.world circle { fill: var(--sky) }
+.pin.plains .ring { fill: none; stroke: var(--sun); stroke-width: 3 }
+.pin line { stroke: var(--sun); stroke-width: 2 }
+.pin .dot { fill: var(--sun); stroke: none }
+.pin text { fill: #fff; font: 700 12px var(--body); text-anchor: middle; dominant-baseline: central; pointer-events: none }
+.pin:hover circle, .pin:focus circle { stroke: var(--sun) }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; color: var(--band-muted) }
+.legend i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 6px; vertical-align: -1px }
+
+/* Stats */
+.stats { align-items: start; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; padding-block: 24px 8px }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; min-width: 0 }
+.stat b { font-family: var(--display); font-size: 30px; display: block; font-variant-numeric: tabular-nums }
+.stat small { color: var(--muted); font-size: 14px }
+.split { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin-top: 8px }
+.split span:first-child { background: var(--prairie) } .split span:last-child { background: var(--sky) }
+.eras { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px }
+.eras span { font-size: 12px; padding: 2px 7px; border-radius: 99px; border: 1px solid var(--line); color: var(--muted) }
+.eras span.on { background: var(--teal); border-color: var(--teal); color: var(--card); font-weight: 700 }
+
+/* Controls */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper); border-bottom: 1px solid var(--line) }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper) }
+.bar .wrap { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; padding-block: 12px }
+.seg { display: inline-flex; border: 2px solid var(--ink); border-radius: 99px; overflow: hidden }
+.seg button { font: 700 15px var(--body); background: none; color: var(--ink); border: 0; padding: 7px 14px; cursor: pointer }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper) }
+label.ctl { display: inline-flex; gap: 8px; align-items: center; font-size: 15px }
+select { font: 15px var(--body); padding: 6px 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--ink) }
+input[type=checkbox] { width: 18px; height: 18px; accent-color: var(--teal) }
+.count { margin-left: auto; color: var(--muted); font-size: 14px }
+
+/* Cards */
+main .wrap { display: grid; gap: 22px; padding-block: 24px 64px }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; scroll-margin-top: 80px }
+.card-head { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; padding: 20px 22px 6px; align-items: start }
+.num { grid-row: span 2; width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; font: 800 22px var(--display); color: #fff }
+.num.us { background: var(--prairie) } .num.world { background: var(--sky) }
+.card h2 { font-size: clamp(22px, 3.4vw, 30px); font-weight: 800 }
+.where { color: var(--muted); font-size: 15px }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 22px 0 }
+.chip { font-size: 12.5px; font-weight: 700; padding: 3px 9px; border-radius: 99px; background: var(--paper); border: 1px solid var(--line); color: var(--muted) }
+.chip.plains { background: var(--sun); border-color: var(--sun); color: #14213D }
+.chip.flag { background: var(--warn-bg); border-color: transparent; color: var(--warn-fg) }
+.card-body { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 22px; padding: 16px 22px 20px }
+@media (max-width: 760px) { .card-body { grid-template-columns: 1fr } }
+.story { margin: 0; max-width: 65ch }
+.local { margin: 12px 0 0; font-size: 15px; color: var(--teal); font-weight: 700 }
+.side { display: grid; gap: 14px; align-content: start; font-size: 15px }
+.side h3 { font: 700 12px var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px }
+.side p { margin: 0 }
+.img-slot { border: 2px dashed var(--line); border-radius: 10px; padding: 10px 12px; font-size: 14px }
+.img-slot em { color: var(--muted) }
+.src { margin: 0; padding-left: 18px }
+.src li + li { margin-top: 4px }
+.note { display: inline-block; font-size: 12px; font-weight: 700; color: var(--warn-fg); background: var(--warn-bg); padding: 0 6px; border-radius: 4px }
+
+details.quiz { border-top: 1px solid var(--line) }
+details.quiz > summary { cursor: pointer; padding: 14px 22px; font: 700 16px var(--body); list-style-position: inside }
+.qs { display: grid; gap: 14px; padding: 0 22px 22px }
+.q { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; min-width: 0 }
+.q-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 13px; color: var(--muted); margin-bottom: 6px }
+.type { font-weight: 700; color: var(--ink); background: var(--paper); border-radius: 6px; padding: 1px 8px }
+.dots { letter-spacing: 2px; color: var(--sun) }
+.q-prompt { font-weight: 700; margin: 0 0 8px }
+.choices { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px }
+.choices li { padding: 7px 10px; border-radius: 8px; background: var(--paper); font-size: 15.5px }
+.choices li .why { display: block; color: var(--muted); font-size: 14px; margin-top: 2px }
+.show-answers .choices li.correct { background: var(--good-bg); color: var(--good); font-weight: 700 }
+.show-answers .choices li.correct::before { content: "\2713  "; }
+.choices li .why, .q .expl { display: none }
+.show-answers .choices li .why, .show-answers .q .expl { display: block }
+.expl { margin: 10px 0 0; font-size: 14.5px; border-left: 3px solid var(--teal); padding-left: 10px }
+.band-note { font-size: 13px; color: var(--muted); font-style: italic }
+.empty { text-align: center; color: var(--muted); padding: 40px 0 }
+footer { color: var(--muted); font-size: 14px; padding-block: 0 48px }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth } }
+</style>
+
+<header class="band">
+  <div class="wrap">
+    <div class="eyebrow">Phase 1 &middot; Sample content review</div>
+    <h1>GeoHistory <span>Fun!</span></h1>
+    <p class="lede">Ten sample places and their quiz questions, written at two reading levels. Check facts, tone, and difficulty before we build the prototype. Select a pin to jump to its card.</p>
+    <svg id="map" class="map" role="img" aria-labelledby="map-title"><title id="map-title">World map with numbered pins for the ten sample places. The same places are listed as cards below.</title></svg>
+    <div class="legend" aria-hidden="true">
+      <span><i style="background:var(--prairie)"></i>United States</span>
+      <span><i style="background:var(--sky)"></i>World</span>
+      <span><i style="border:3px solid var(--sun)"></i>Nebraska and Plains</span>
+    </div>
+  </div>
+</header>
+
+<section class="wrap stats" id="stats" aria-label="Coverage summary"></section>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="seg" role="group" aria-label="Reading level">
+      <button type="button" id="band-612" data-band="6-12" aria-pressed="true">Grades 6-12</button>
+      <button type="button" id="band-adult" data-band="adult" aria-pressed="false">Adult</button>
+    </div>
+    <label class="ctl" for="region">Region
+      <select id="region"><option value="all">All regions</option></select>
+    </label>
+    <label class="ctl" for="answers"><input type="checkbox" id="answers" checked> Show answers</label>
+    <span class="count" id="count" aria-live="polite"></span>
+  </div>
+</div>
+
+<main><div class="wrap show-answers" id="cards"></div></main>
+<footer class="wrap">Generated from <code>data/places.json</code>, <code>data/events.json</code>, and <code>data/questions.json</code>. Standards tags are drafts until checked against the Nebraska Social Studies Standards.</footer>
+
+<script>
+const DATA = /*__DATA__*/null;
+const MAP = /*__MAP__*/null;
+const T = DATA.taxonomy;
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const placeOf = e => DATA.places.find(p => p.id === e.placeId);
+const eraOf = id => T.eras.find(x => x.id === id);
+const regionOf = id => T.regions.find(x => x.id === id);
+const state = { band: '6-12', region: 'all' };
+try { const b = localStorage.getItem('ghf-band'); if (b === 'adult' || b === '6-12') state.band = b; } catch (e) {}
+
+// Map
+(function drawMap() {
+  const svg = document.getElementById('map');
+  svg.setAttribute('viewBox', `0 0 ${MAP.W} ${MAP.H}`);
+  let s = `<path class="sea" d="${MAP.sphere}"/><path class="grat" d="${MAP.grat}"/><path class="land" d="${MAP.land}"/>`;
+  for (const p of MAP.pins) {
+    s += `<a href="#${p.id}" class="pin ${p.us ? 'us' : 'world'}${p.plains ? ' plains' : ''}" aria-label="${p.n}. ${esc(p.label)}">`
+      + (p.lx !== p.x || p.ly !== p.y ? `<line x1="${p.x}" y1="${p.y}" x2="${p.lx}" y2="${p.ly}"/><circle class="dot" cx="${p.x}" cy="${p.y}" r="3"/>` : '')
+      + (p.plains ? `<circle class="ring" cx="${p.lx}" cy="${p.ly}" r="${MAP.R + 4}"/>` : '')
+      + `<circle cx="${p.lx}" cy="${p.ly}" r="${MAP.R}"/><text x="${p.lx}" y="${p.ly}">${p.n}</text></a>`;
+  }
+  svg.insertAdjacentHTML('beforeend', s);
+})();
+
+// Stats
+(function drawStats() {
+  const P = DATA.places, Q = DATA.questions;
+  const us = P.filter(p => p.country === 'United States').length, world = P.length - us;
+  const usedEras = new Set(DATA.events.map(e => e.era));
+  const e2p = Q.filter(q => q.type === 'event-to-place').length;
+  const adultOnly = Q.filter(q => !q.bands.includes('6-12')).length;
+  document.getElementById('stats').innerHTML = `
+    <div class="stat"><b>${us} / ${world}</b><small>US and world places (target 60 / 40)</small>
+      <div class="split" aria-hidden="true"><span style="flex:${us}"></span><span style="flex:${world}"></span></div></div>
+    <div class="stat"><b>${P.filter(p => p.plains).length}</b><small>Nebraska and Plains places, plus the Golden Spike's Omaha connection</small></div>
+    <div class="stat"><b>${Q.length}</b><small>${e2p} event to place, ${Q.length - e2p} place to event. ${adultOnly} are Adult only.</small></div>
+    <div class="stat"><b>${usedEras.size} of ${T.eras.length}</b><small>Eras covered. Gaps get filled in the full set of 30.</small>
+      <div class="eras">${T.eras.map(x => `<span class="${usedEras.has(x.id) ? 'on' : ''}" title="${esc(x.range)}">${esc(x.label)}</span>`).join('')}</div></div>`;
+})();
+
+// Region filter options
+(function fillRegions() {
+  const used = [...new Set(DATA.places.map(p => p.region))];
+  const sel = document.getElementById('region');
+  sel.insertAdjacentHTML('beforeend', T.regions.filter(r => used.includes(r.id)).map(r => `<option value="${r.id}">${esc(r.label)}</option>`).join(''));
+})();
+
+const typeLabel = { 'event-to-place': 'Event → Place', 'place-to-event': 'Place → Event' };
+
+function questionHTML(q) {
+  const prompt = q.prompt[state.band] || q.prompt['6-12'] || q.prompt.adult;
+  const reused = state.band === 'adult' && !q.prompt.adult;
+  return `<div class="q">
+    <div class="q-meta"><span class="type">${typeLabel[q.type]}</span>
+      <span>Difficulty <span class="dots" aria-label="${q.difficulty} of 3">${'●'.repeat(q.difficulty)}${'○'.repeat(3 - q.difficulty)}</span></span>
+      <span>${q.bands.map(b => b === 'adult' ? 'Adult' : 'Grades 6-12').join(' + ')}</span>
+      ${reused ? '<span class="band-note">Same wording for both levels</span>' : ''}</div>
+    <p class="q-prompt">${esc(prompt)}</p>
+    <ul class="choices">${q.choices.map(c => `<li class="${c.correct ? 'correct' : ''}">${esc(c.text)}${c.why ? `<span class="why">${esc(c.why)}</span>` : ''}</li>`).join('')}</ul>
+    <p class="expl">${esc(q.explanation)}</p></div>`;
+}
+
+function cardHTML(e, i) {
+  const p = placeOf(e), us = p.country === 'United States';
+  const qs = DATA.questions.filter(q => q.eventId === e.id && q.bands.includes(state.band));
+  const where = `${p.name}, ${us ? p.admin : p.country}`;
+  const flags = [];
+  if (e.sensitivity !== 'none') flags.push(`<span class="chip flag">Content note: ${esc(e.sensitivity)}</span>`);
+  if (e.image.status === 'needs-sourcing') flags.push('<span class="chip flag">Image needed</span>');
+  if (e.standards.some(s => !s.verified)) flags.push('<span class="chip flag">Standards unverified</span>');
+  return `<article class="card" id="${e.id}" aria-labelledby="h-${e.id}">
+    <div class="card-head">
+      <div class="num ${us ? 'us' : 'world'}" aria-hidden="true">${i + 1}</div>
+      <h2 id="h-${e.id}">${esc(e.title)}</h2>
+      <div class="where">${esc(where)} &middot; ${esc(e.dateLabel)}</div>
+    </div>
+    <div class="chips">
+      <span class="chip">${esc(eraOf(e.era).label)}</span>
+      <span class="chip">${esc(regionOf(p.region).label)}</span>
+      ${p.plains ? '<span class="chip plains">Nebraska and Plains</span>' : ''}
+      ${e.topics.map(t => `<span class="chip">${esc(t.replace(/-/g, ' '))}</span>`).join('')}
+      ${flags.join('')}
+    </div>
+    <div class="card-body">
+      <div>
+        <p class="story">${esc(e.summary[state.band])}</p>
+        ${e.localConnection && !p.plains ? `<p class="local">Nebraska connection: ${esc(e.localConnection)}</p>` : ''}
+      </div>
+      <div class="side">
+        <div><h3>Fun fact</h3><p>${esc(e.funFact)}</p></div>
+        <div><h3>Then and now</h3><p>${esc(e.thenAndNow)}</p></div>
+        <div class="img-slot"><h3>Image (to source)</h3><p><em>Draft alt text:</em> ${esc(e.image.alt)}</p><p><em>Search:</em> ${esc(e.image.suggestedSearch)}</p></div>
+        <div><h3>Sources</h3><ul class="src">${e.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.publisher)}: ${esc(s.title)}</a>${s.needsSpecificUrl ? ' <span class="note">Needs a specific page</span>' : ''}</li>`).join('')}</ul></div>
+        <div><h3>Standards (draft)</h3><p>${e.standards.map(s => `${esc(s.strand)}: ${esc(s.likelyCourses.join(', '))}`).join('<br>')}</p></div>
+      </div>
+    </div>
+    <details class="quiz" open><summary>Quiz questions (${qs.length})</summary><div class="qs">${qs.map(questionHTML).join('')}</div></details>
+  </article>`;
+}
+
+function render() {
+  const list = DATA.events.map((e, i) => ({ e, i })).filter(({ e }) => state.region === 'all' || placeOf(e).region === state.region);
+  const el = document.getElementById('cards');
+  el.innerHTML = list.length ? list.map(({ e, i }) => cardHTML(e, i)).join('') : '<p class="empty">No places in this region yet.</p>';
+  const nq = list.reduce((n, { e }) => n + DATA.questions.filter(q => q.eventId === e.id && q.bands.includes(state.band)).length, 0);
+  document.getElementById('count').textContent = `${list.length} places, ${nq} questions at this level`;
+  document.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.band === state.band)));
+}
+
+document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
+  state.band = b.dataset.band; try { localStorage.setItem('ghf-band', state.band); } catch (e) {} render();
+}));
+document.getElementById('region').addEventListener('change', ev => { state.region = ev.target.value; render(); });
+document.getElementById('answers').addEventListener('change', ev => document.getElementById('cards').classList.toggle('show-answers', ev.target.checked));
+render();
+</script>

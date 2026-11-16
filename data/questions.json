@@ -1,0 +1,255 @@
+[
+  {
+    "id": "q-homestead-1", "eventId": "homestead-first-claim", "type": "event-to-place", "bands": ["6-12", "adult"], "difficulty": 1,
+    "prompt": { "6-12": "Daniel Freeman filed one of the first Homestead Act claims in 1863. Where was his land?", "adult": "Daniel Freeman's 1863 claim, among the first under the Homestead Act, is now a national historical park. Where is it?" },
+    "choices": [
+      { "id": "a", "text": "Near Beatrice, Nebraska", "correct": true },
+      { "id": "b", "text": "Near Abilene, Kansas", "why": "Abilene became famous as a cattle-drive railhead in the late 1860s, not for the first homestead claim." },
+      { "id": "c", "text": "Near Sioux Falls, Dakota Territory", "why": "Many settlers homesteaded in Dakota Territory, but the claim tied to the act's first day was in Nebraska." },
+      { "id": "d", "text": "Near Denver, Colorado Territory", "why": "Denver grew out of the 1858 gold rush, a mining boom rather than farm claims." }
+    ],
+    "explanation": "Freeman filed at the Brownville land office just after midnight on January 1, 1863. His land on Cub Creek near Beatrice is now Homestead National Historical Park."
+  },
+  {
+    "id": "q-homestead-2", "eventId": "homestead-first-claim", "type": "place-to-event", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "Which event is connected to the land near Beatrice, Nebraska?" },
+    "choices": [
+      { "id": "a", "text": "One of the first claims under the Homestead Act is filed (1863)", "correct": true },
+      { "id": "b", "text": "The golden spike completes the transcontinental railroad (1869)", "why": "That happened at Promontory Summit, Utah." },
+      { "id": "c", "text": "The Dust Bowl's \"Black Sunday\" storm (1935)", "why": "Black Sunday hit hardest in the southern Plains, especially the Oklahoma and Texas panhandles." },
+      { "id": "d", "text": "Lewis and Clark hold their first council with the Otoe and Missouria (1804)", "why": "That council was at \"Council Bluff\" on the Missouri River, north of present-day Omaha, near Fort Calhoun." }
+    ],
+    "explanation": "Homestead National Historical Park near Beatrice preserves Daniel Freeman's 1863 claim, one of the first under the Homestead Act."
+  },
+  {
+    "id": "q-homestead-3", "eventId": "homestead-first-claim", "type": "event-to-place", "bands": ["adult"], "difficulty": 3,
+    "prompt": { "adult": "Black homesteaders founded the Sandhills community of DeWitty under the Kinkaid Act. In which state was it?" },
+    "choices": [
+      { "id": "a", "text": "Nebraska", "correct": true },
+      { "id": "b", "text": "Kansas", "why": "Nicodemus, Kansas, founded in 1877, is the best-known Black homestead town, but it is not DeWitty." },
+      { "id": "c", "text": "Oklahoma", "why": "Oklahoma had many all-Black towns, such as Boley, but the Kinkaid Act applied only to western Nebraska." },
+      { "id": "d", "text": "Colorado", "why": "Dearfield, Colorado, was a Black homestead colony founded in 1910, but DeWitty was in Nebraska." }
+    ],
+    "explanation": "The 1904 Kinkaid Act offered 640-acre homesteads in western Nebraska. DeWitty, in Cherry County, was the state's largest rural Black settlement."
+  },
+  {
+    "id": "q-standingbear-1", "eventId": "standing-bear-trial", "type": "event-to-place", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "In 1879, a federal judge ruled that Ponca chief Standing Bear was a \"person\" under the law. Where was the case heard?" },
+    "choices": [
+      { "id": "a", "text": "Omaha, Nebraska", "correct": true },
+      { "id": "b", "text": "Washington, D.C.", "why": "The case never reached the Supreme Court. It was decided in federal district court in Omaha." },
+      { "id": "c", "text": "Fort Laramie, Wyoming", "why": "Fort Laramie is famous for treaties signed in 1851 and 1868, not for this case." },
+      { "id": "d", "text": "Indian Territory (present-day Oklahoma)", "why": "That is where the Ponca had been forced to move. Standing Bear was arrested after leaving it and tried in Omaha." }
+    ],
+    "explanation": "Standing Bear was held at Fort Omaha, and Judge Elmer Dundy heard his habeas corpus case in federal court in Omaha in May 1879."
+  },
+  {
+    "id": "q-standingbear-2", "eventId": "standing-bear-trial", "type": "place-to-event", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "Which event happened in Omaha, Nebraska?" },
+    "choices": [
+      { "id": "a", "text": "Standing Bear wins a ruling that a Native American is a person under the law (1879)", "correct": true },
+      { "id": "b", "text": "Sitting Bull surrenders to the US Army (1881)", "why": "Sitting Bull surrendered at Fort Buford, in present-day North Dakota." },
+      { "id": "c", "text": "The Battle of the Little Bighorn (1876)", "why": "That battle took place in Montana Territory." },
+      { "id": "d", "text": "The Wounded Knee Massacre (1890)", "why": "Wounded Knee is in South Dakota, on the Pine Ridge Reservation." }
+    ],
+    "explanation": "Standing Bear v. Crook was decided in Omaha in 1879, a landmark moment for Native American legal rights."
+  },
+  {
+    "id": "q-standingbear-3", "eventId": "standing-bear-trial", "type": "event-to-place", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "Standing Bear promised to bury his son in the Ponca homeland. That homeland is along which Nebraska river?" },
+    "choices": [
+      { "id": "a", "text": "The Niobrara River", "correct": true },
+      { "id": "b", "text": "The Platte River", "why": "The Platte crosses central Nebraska and guided the Oregon Trail. The Ponca homeland was farther north and east." },
+      { "id": "c", "text": "The Republican River", "why": "The Republican runs through southern Nebraska and northern Kansas." },
+      { "id": "d", "text": "The Arkansas River", "why": "The Arkansas flows through Indian Territory, where the Ponca were sent, not their home." }
+    ],
+    "explanation": "The Ponca homeland is where the Niobrara meets the Missouri River in northeast Nebraska."
+  },
+  {
+    "id": "q-declaration-1", "eventId": "declaration-adopted", "type": "event-to-place", "bands": ["6-12", "adult"], "difficulty": 1,
+    "prompt": { "6-12": "Where did the Second Continental Congress adopt the Declaration of Independence in July 1776?" },
+    "choices": [
+      { "id": "a", "text": "Philadelphia, Pennsylvania", "correct": true },
+      { "id": "b", "text": "Boston, Massachusetts", "why": "Boston was the scene of the Tea Party and early protests, but Congress met in Philadelphia." },
+      { "id": "c", "text": "Williamsburg, Virginia", "why": "Virginia's convention met there in May 1776 and urged independence, but the Declaration was adopted in Philadelphia." },
+      { "id": "d", "text": "New York City, New York", "why": "New York was the first capital under the Constitution in 1789, where Washington took the oath of office." }
+    ],
+    "explanation": "Congress met in the Pennsylvania State House, now called Independence Hall, in Philadelphia."
+  },
+  {
+    "id": "q-declaration-2", "eventId": "declaration-adopted", "type": "place-to-event", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "Which event happened in Philadelphia?" },
+    "choices": [
+      { "id": "a", "text": "Congress approves the Declaration of Independence (1776)", "correct": true },
+      { "id": "b", "text": "Washington crosses the Delaware River (1776)", "why": "Washington crossed about 30 miles upstream at McConkey's Ferry to attack Trenton, New Jersey." },
+      { "id": "c", "text": "The Battle of Bunker Hill (1775)", "why": "That battle was fought in Charlestown, next to Boston." },
+      { "id": "d", "text": "The British surrender at Yorktown (1781)", "why": "Yorktown is in Virginia, on Chesapeake Bay." }
+    ],
+    "explanation": "The Declaration of Independence was debated and approved at the Pennsylvania State House in Philadelphia."
+  },
+  {
+    "id": "q-goldenspike-1", "eventId": "golden-spike", "type": "event-to-place", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "In 1869, the Central Pacific and Union Pacific railroads met to finish the first transcontinental railroad. Where?" },
+    "choices": [
+      { "id": "a", "text": "Promontory Summit, Utah Territory", "correct": true },
+      { "id": "b", "text": "Omaha, Nebraska", "why": "Omaha was where the Union Pacific started building west." },
+      { "id": "c", "text": "Sacramento, California", "why": "Sacramento was where the Central Pacific started building east." },
+      { "id": "d", "text": "Ogden, Utah Territory", "why": "Ogden became the main junction city afterward, but the ceremony was held at Promontory Summit, northwest of Ogden." }
+    ],
+    "explanation": "The golden spike ceremony took place at Promontory Summit on May 10, 1869."
+  },
+  {
+    "id": "q-goldenspike-2", "eventId": "golden-spike", "type": "place-to-event", "bands": ["6-12", "adult"], "difficulty": 1,
+    "prompt": { "6-12": "Omaha, Nebraska, was the starting point for which project?" },
+    "choices": [
+      { "id": "a", "text": "The Union Pacific's half of the transcontinental railroad", "correct": true },
+      { "id": "b", "text": "The Pony Express", "why": "The Pony Express started in St. Joseph, Missouri, in 1860." },
+      { "id": "c", "text": "The Oregon Trail", "why": "Most Oregon Trail travelers left from Missouri towns such as Independence." },
+      { "id": "d", "text": "The Lewis and Clark Expedition", "why": "Lewis and Clark set out from near St. Louis, Missouri, in 1804." }
+    ],
+    "explanation": "The Union Pacific broke ground in Omaha in 1863 and built west until meeting the Central Pacific in Utah in 1869."
+  },
+  {
+    "id": "q-montgomery-1", "eventId": "montgomery-bus-boycott", "type": "event-to-place", "bands": ["6-12", "adult"], "difficulty": 1,
+    "prompt": { "6-12": "In 1955, Rosa Parks was arrested for refusing to give up her bus seat. In what city?" },
+    "choices": [
+      { "id": "a", "text": "Montgomery, Alabama", "correct": true },
+      { "id": "b", "text": "Birmingham, Alabama", "why": "Birmingham was the site of a major 1963 campaign and the 16th Street Baptist Church bombing." },
+      { "id": "c", "text": "Selma, Alabama", "why": "The 1965 voting rights marches started in Selma and ended in Montgomery." },
+      { "id": "d", "text": "Greensboro, North Carolina", "why": "Greensboro is known for the 1960 lunch counter sit-ins." }
+    ],
+    "explanation": "Parks was arrested in Montgomery on December 1, 1955, which sparked the 381-day bus boycott."
+  },
+  {
+    "id": "q-montgomery-2", "eventId": "montgomery-bus-boycott", "type": "place-to-event", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "Which event took place in Montgomery, Alabama?" },
+    "choices": [
+      { "id": "a", "text": "A 381-day boycott of the city's segregated buses (1955-1956)", "correct": true },
+      { "id": "b", "text": "Brown v. Board of Education begins (1951)", "why": "The Brown case began in Topeka, Kansas." },
+      { "id": "c", "text": "The Little Rock Nine enter Central High School (1957)", "why": "Central High School is in Little Rock, Arkansas." },
+      { "id": "d", "text": "The March on Washington (1963)", "why": "That march took place in Washington, D.C." }
+    ],
+    "explanation": "The Montgomery Bus Boycott lasted from December 1955 to December 1956 and ended segregation on the city's buses."
+  },
+  {
+    "id": "q-montgomery-3", "eventId": "montgomery-bus-boycott", "type": "event-to-place", "bands": ["adult"], "difficulty": 3,
+    "prompt": { "adult": "Fifteen-year-old Claudette Colvin refused to give up her bus seat nine months before Rosa Parks did. Where?" },
+    "choices": [
+      { "id": "a", "text": "Montgomery, Alabama", "correct": true },
+      { "id": "b", "text": "Baton Rouge, Louisiana", "why": "Baton Rouge held an earlier bus boycott in 1953, but Colvin's arrest happened in Montgomery." },
+      { "id": "c", "text": "Tallahassee, Florida", "why": "Tallahassee's bus boycott began in 1956, inspired by Montgomery's." },
+      { "id": "d", "text": "Atlanta, Georgia", "why": "Atlanta was Martin Luther King Jr.'s hometown, but Colvin lived and was arrested in Montgomery." }
+    ],
+    "explanation": "Colvin was arrested in Montgomery in March 1955 and later became a plaintiff in Browder v. Gayle, the case that ended bus segregation there."
+  },
+  {
+    "id": "q-apollo-1", "eventId": "apollo-11-launch", "type": "event-to-place", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "Where did Apollo 11 launch on its way to the first crewed Moon landing?" },
+    "choices": [
+      { "id": "a", "text": "Kennedy Space Center, Florida", "correct": true },
+      { "id": "b", "text": "Houston, Texas", "why": "Houston was home to Mission Control, which guided the flight once it left the launch tower." },
+      { "id": "c", "text": "Huntsville, Alabama", "why": "The Saturn V rocket was developed in Huntsville, but it launched from Florida." },
+      { "id": "d", "text": "White Sands, New Mexico", "why": "White Sands was used for rocket and engine testing, not crewed launches." }
+    ],
+    "explanation": "Apollo 11 lifted off from Launch Complex 39A at Kennedy Space Center on July 16, 1969."
+  },
+  {
+    "id": "q-apollo-2", "eventId": "apollo-11-launch", "type": "place-to-event", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "Which event began on Florida's Atlantic coast at Kennedy Space Center?" },
+    "choices": [
+      { "id": "a", "text": "The Apollo 11 mission to the Moon (1969)", "correct": true },
+      { "id": "b", "text": "The Wright brothers' first powered flight (1903)", "why": "That flight took place at Kitty Hawk, North Carolina." },
+      { "id": "c", "text": "The first atomic bomb test (1945)", "why": "That test was at the Trinity Site in New Mexico." },
+      { "id": "d", "text": "The launch of Sputnik (1957)", "why": "The Soviet Union launched Sputnik from Baikonur, in present-day Kazakhstan." }
+    ],
+    "explanation": "Apollo 11 launched from Kennedy Space Center, where rockets head east over the ocean."
+  },
+  {
+    "id": "q-rosetta-1", "eventId": "rosetta-stone-found", "type": "place-to-event", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "Which of these happened near the town of Rashid (Rosetta) in Egypt?", "adult": "Which of these happened near Rashid (Rosetta), Egypt?" },
+    "choices": [
+      { "id": "a", "text": "French soldiers uncover a stone that unlocks Egyptian hieroglyphs (1799)", "correct": true },
+      { "id": "b", "text": "The Suez Canal opens (1869)", "why": "The canal opened about 150 km to the east, at Port Said." },
+      { "id": "c", "text": "The Great Pyramid is built", "why": "The Great Pyramid is at Giza, near Cairo." },
+      { "id": "d", "text": "The Camp David Accords are signed (1978)", "why": "They were signed at Camp David in Maryland, in the United States." }
+    ],
+    "explanation": "The Rosetta Stone was found near Rashid in the Nile Delta in July 1799."
+  },
+  {
+    "id": "q-rosetta-2", "eventId": "rosetta-stone-found", "type": "event-to-place", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "Where was the Rosetta Stone discovered in 1799?" },
+    "choices": [
+      { "id": "a", "text": "Near Rashid, in Egypt's Nile Delta", "correct": true },
+      { "id": "b", "text": "Giza, near Cairo", "why": "Giza is home to the pyramids and the Sphinx, not the Rosetta Stone." },
+      { "id": "c", "text": "Luxor (ancient Thebes)", "why": "Luxor is near the Valley of the Kings, where Tutankhamun's tomb was found in 1922." },
+      { "id": "d", "text": "London, England", "why": "The stone has been displayed in London's British Museum since 1802, but it was found in Egypt." }
+    ],
+    "explanation": "French soldiers found the stone while rebuilding a fort near Rashid, which Europeans called Rosetta."
+  },
+  {
+    "id": "q-berlin-1", "eventId": "berlin-wall-falls", "type": "event-to-place", "bands": ["6-12", "adult"], "difficulty": 1,
+    "prompt": { "6-12": "In November 1989, crowds crossed a wall that had divided their city for 28 years. Which city?" },
+    "choices": [
+      { "id": "a", "text": "Berlin, Germany", "correct": true },
+      { "id": "b", "text": "Moscow, Russia", "why": "Moscow was the Soviet capital, but it was never divided by a wall." },
+      { "id": "c", "text": "Prague, Czechoslovakia", "why": "Prague's Velvet Revolution also happened in November 1989, but the city was never divided by a wall." },
+      { "id": "d", "text": "Warsaw, Poland", "why": "The Warsaw Pact was named for this city, but Warsaw was not split by a wall." }
+    ],
+    "explanation": "The Berlin Wall surrounded West Berlin from 1961 until its checkpoints opened on November 9, 1989."
+  },
+  {
+    "id": "q-berlin-2", "eventId": "berlin-wall-falls", "type": "place-to-event", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "Which event took place in Berlin?" },
+    "choices": [
+      { "id": "a", "text": "Border guards open the wall's checkpoints (1989)", "correct": true },
+      { "id": "b", "text": "The Treaty of Versailles is signed (1919)", "why": "It was signed at the Palace of Versailles, near Paris, France." },
+      { "id": "c", "text": "The end of the Soviet Union is announced (1991)", "why": "Gorbachev resigned and the Soviet Union dissolved in Moscow." },
+      { "id": "d", "text": "Churchill gives his \"Iron Curtain\" speech (1946)", "why": "Churchill gave that speech in Fulton, Missouri." }
+    ],
+    "explanation": "On the night of November 9, 1989, crowds pushed through Berlin's checkpoints, and the wall effectively fell."
+  },
+  {
+    "id": "q-machupicchu-1", "eventId": "machu-picchu-built", "type": "event-to-place", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "Around 1450, the Inca emperor Pachacuti had a royal estate built high in the Andes mountains. What is it called today?" },
+    "choices": [
+      { "id": "a", "text": "Machu Picchu, Peru", "correct": true },
+      { "id": "b", "text": "Cusco, Peru", "why": "Cusco was the Inca capital, about 75 km (47 miles) southeast of Machu Picchu." },
+      { "id": "c", "text": "Tenochtitlan, Mexico", "why": "Tenochtitlan was the Aztec capital, where Mexico City stands today." },
+      { "id": "d", "text": "Chichén Itzá, Mexico", "why": "Chichén Itzá is a Maya city on Mexico's Yucatán Peninsula." }
+    ],
+    "explanation": "Machu Picchu sits on a ridge above the Urubamba River and was likely built as Pachacuti's royal estate."
+  },
+  {
+    "id": "q-machupicchu-2", "eventId": "machu-picchu-built", "type": "place-to-event", "bands": ["6-12", "adult"], "difficulty": 3,
+    "prompt": { "6-12": "Which event is connected to Machu Picchu?" },
+    "choices": [
+      { "id": "a", "text": "A 1911 expedition, guided by local farmers, makes the site famous worldwide", "correct": true },
+      { "id": "b", "text": "Francisco Pizarro captures the Inca ruler Atahualpa (1532)", "why": "Atahualpa was captured at Cajamarca, in northern Peru." },
+      { "id": "c", "text": "The Spanish found the city of Lima (1535)", "why": "Lima is on Peru's Pacific coast, far from the mountains." },
+      { "id": "d", "text": "Pilots spot the Nazca Lines from the air (1920s-1930s)", "why": "The Nazca Lines are in the coastal desert of southern Peru." }
+    ],
+    "explanation": "Hiram Bingham reached Machu Picchu in 1911 with help from local guides, and his photographs brought it international fame."
+  },
+  {
+    "id": "q-taj-1", "eventId": "taj-mahal-built", "type": "event-to-place", "bands": ["6-12", "adult"], "difficulty": 1,
+    "prompt": { "6-12": "Emperor Shah Jahan built a white marble tomb for his wife, Mumtaz Mahal. In which city?" },
+    "choices": [
+      { "id": "a", "text": "Agra, India", "correct": true },
+      { "id": "b", "text": "Delhi, India", "why": "Shah Jahan also built the Red Fort in Delhi, but the Taj Mahal is in Agra." },
+      { "id": "c", "text": "Istanbul, Turkey", "why": "Istanbul is known for Ottoman landmarks such as the Blue Mosque." },
+      { "id": "d", "text": "Isfahan, Iran", "why": "Persian buildings in cities like Isfahan influenced the Taj's style, but it was built in India." }
+    ],
+    "explanation": "The Taj Mahal stands on the south bank of the Yamuna River in Agra."
+  },
+  {
+    "id": "q-taj-2", "eventId": "taj-mahal-built", "type": "place-to-event", "bands": ["6-12", "adult"], "difficulty": 2,
+    "prompt": { "6-12": "Which event is connected to Agra, India?" },
+    "choices": [
+      { "id": "a", "text": "A Mughal emperor builds the Taj Mahal (1632-1653)", "correct": true },
+      { "id": "b", "text": "Gandhi leads the Salt March (1930)", "why": "The Salt March went from Ahmedabad to Dandi, in the state of Gujarat." },
+      { "id": "c", "text": "India celebrates independence at the Red Fort (1947)", "why": "Prime Minister Nehru raised the flag at the Red Fort in Delhi." },
+      { "id": "d", "text": "Angkor Wat is built (1100s)", "why": "Angkor Wat is in Cambodia." }
+    ],
+    "explanation": "Shah Jahan built the Taj Mahal in Agra as a tomb for Mumtaz Mahal."
+  }
+]

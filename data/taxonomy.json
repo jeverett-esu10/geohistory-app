@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "bands": [
+    { "id": "6-12", "label": "Grades 6-12", "enabled": true, "topicRule": "nebraska-standards-only" },
+    { "id": "adult", "label": "Adult Learner", "enabled": true, "topicRule": "any" },
+    { "id": "k5", "label": "Grades K-5", "enabled": false, "topicRule": "nebraska-standards-only", "note": "Reserved for a future release. Every content field has a k5 slot." }
+  ],
+  "eras": [
+    { "id": "ancient", "label": "Ancient", "range": "before 500 CE" },
+    { "id": "medieval", "label": "Medieval", "range": "500-1450" },
+    { "id": "early-modern", "label": "Early Modern", "range": "1450-1750" },
+    { "id": "revolutions", "label": "Age of Revolutions", "range": "1750-1850" },
+    { "id": "expansion", "label": "Industry and Expansion", "range": "1850-1914" },
+    { "id": "world-wars", "label": "World Wars and Depression", "range": "1914-1945" },
+    { "id": "cold-war", "label": "Cold War and Civil Rights", "range": "1945-1991" },
+    { "id": "contemporary", "label": "Contemporary", "range": "1991 to 15 years ago" }
+  ],
+  "regions": [
+    { "id": "us-plains", "label": "Great Plains (US)", "scope": "us", "plains": true },
+    { "id": "us-northeast", "label": "Northeast (US)", "scope": "us" },
+    { "id": "us-south", "label": "South (US)", "scope": "us" },
+    { "id": "us-west", "label": "West (US)", "scope": "us" },
+    { "id": "us-midwest", "label": "Midwest (US)", "scope": "us" },
+    { "id": "africa", "label": "Africa", "scope": "world" },
+    { "id": "asia", "label": "Asia", "scope": "world" },
+    { "id": "europe", "label": "Europe", "scope": "world" },
+    { "id": "north-america", "label": "North America (outside US)", "scope": "world" },
+    { "id": "south-america", "label": "South America", "scope": "world" },
+    { "id": "oceania", "label": "Oceania", "scope": "world" }
+  ],
+  "topics": [
+    "architecture",
+    "archaeology",
+    "civil-rights",
+    "cold-war",
+    "conflict",
+    "economics",
+    "exploration",
+    "government-civics",
+    "indigenous-peoples",
+    "law-courts",
+    "science-technology",
+    "settlement-migration",
+    "transportation",
+    "world-heritage"
+  ],
+  "sensitivity": [
+    { "id": "none", "label": "No special handling" },
+    { "id": "moderate", "label": "Includes injustice, forced removal, or violence described without graphic detail" },
+    { "id": "high", "label": "Mass violence or atrocity. Adult band only unless a standard requires it" }
+  ],
+  "localLean": {
+    "homeRegion": "us-plains",
+    "levels": [
+      { "id": "off", "label": "Off", "extraPoints": 0 },
+      { "id": "default", "label": "A little extra", "extraPoints": 3 },
+      { "id": "strong", "label": "Lots of local", "extraPoints": 10 }
+    ]
+  },
+  "mix": { "us": 0.6, "world": 0.4 }
+}

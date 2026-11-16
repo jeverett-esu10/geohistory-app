@@ -1,0 +1,584 @@
+[
+  {
+    "id": "homestead-first-claim",
+    "placeId": "beatrice-ne",
+    "title": "One of the First Homestead Act Claims",
+    "year": 1863,
+    "dateLabel": "January 1, 1863",
+    "era": "expansion",
+    "topics": [
+      "settlement-migration",
+      "government-civics",
+      "economics",
+      "indigenous-peoples"
+    ],
+    "minBand": "6-12",
+    "sensitivity": "moderate",
+    "localConnection": "Nebraska",
+    "summary": {
+      "k5": null,
+      "6-12": "Just after midnight on January 1, 1863, a Union Army scout named Daniel Freeman convinced a land office clerk in Brownville, Nebraska, to open early. He filed one of the very first claims under the Homestead Act, a law that offered 160 acres of public land to anyone willing to live on it and farm it for five years. Over the next several decades, about 1.6 million homesteads were granted, covering roughly 10% of all US land. The land was not empty, though. Much of it had been home to Native nations, including the Otoe-Missouria, Pawnee, and Lakota, who were pushed off through treaties and force.",
+      "adult": "President Lincoln signed the Homestead Act on May 20, 1862, and it took effect on January 1, 1863. Daniel Freeman, a Union scout on leave, reportedly persuaded a clerk at the Brownville land office to open just after midnight so he could file before returning to duty. His claim on Cub Creek near Beatrice is now Homestead National Historical Park. The act was unusually open for its time: women who headed households, immigrants intending to become citizens, and, after the Civil War, African Americans could all file. Black homesteaders built Nebraska communities such as DeWitty in the Sandhills under the later Kinkaid Act. The same policy depended on removing Native nations from their homelands, and the park now tells both stories side by side."
+    },
+    "funFact": "The last homestead granted under the act went to Ken Deardorff in Alaska in 1988, 125 years after Freeman's claim.",
+    "thenAndNow": "Then: open tallgrass prairie, sod houses, and dugouts. Now: the park preserves one of the oldest restored tallgrass prairies in the country and keeps a searchable record of homesteaders' descendants.",
+    "image": {
+      "status": "needs-sourcing",
+      "suggestedSearch": "Wikimedia Commons: Homestead National Monument Heritage Center OR Freeman School Nebraska",
+      "alt": "A one-room brick schoolhouse stands at the edge of rolling prairie grass under a wide sky.",
+      "credit": null,
+      "license": null,
+      "url": null
+    },
+    "sources": [
+      {
+        "publisher": "National Park Service",
+        "title": "Homestead National Historical Park",
+        "url": "https://www.nps.gov/home/"
+      },
+      {
+        "publisher": "National Archives",
+        "title": "Homestead Act (1862)",
+        "url": "https://www.archives.gov/milestone-documents/homestead-act"
+      }
+    ],
+    "standards": [
+      {
+        "framework": "NE-SS",
+        "strand": "History",
+        "likelyCourses": [
+          "Grade 8 US History",
+          "HS US History"
+        ],
+        "code": null,
+        "verified": false
+      },
+      {
+        "framework": "NE-SS",
+        "strand": "Economics",
+        "likelyCourses": [
+          "Grade 8"
+        ],
+        "code": null,
+        "verified": false
+      }
+    ]
+  },
+  {
+    "id": "standing-bear-trial",
+    "placeId": "omaha-ne",
+    "title": "Standing Bear v. Crook",
+    "year": 1879,
+    "dateLabel": "May 1879",
+    "era": "expansion",
+    "topics": [
+      "indigenous-peoples",
+      "law-courts",
+      "civil-rights",
+      "government-civics"
+    ],
+    "minBand": "6-12",
+    "sensitivity": "moderate",
+    "localConnection": "Nebraska",
+    "summary": {
+      "k5": null,
+      "6-12": "In 1877, the US government forced the Ponca people to leave their homeland along the Niobrara River in northeast Nebraska and move to Indian Territory, in present-day Oklahoma. Many died there, including the son of Chief Standing Bear. Standing Bear had promised to bury his son at home, so he and a small group walked hundreds of miles back north. Soldiers arrested them and held them at Fort Omaha. Lawyers and a local newspaper editor helped Standing Bear take the government to federal court in Omaha. In court, Standing Bear raised his hand and said, \"That hand is not the color of yours, but if I prick it, the blood will flow, and I shall feel pain.\" In May 1879, Judge Elmer Dundy ruled that a Native American is a \"person\" under the law and that the group must be set free.",
+      "adult": "After the Ponca were removed to Indian Territory in 1877, Standing Bear's son Bear Shield died and asked to be buried in the Niobrara homeland. Standing Bear led about thirty people north in early 1879 and was arrested on the Omaha Reservation. General George Crook, who held them at Fort Omaha, was privately sympathetic, and Omaha Daily Herald editor Thomas Tibbles recruited attorneys John Webster and Andrew Poppleton to file a writ of habeas corpus. Judge Elmer Dundy's ruling that \"an Indian is a person\" within the meaning of the law freed the group, though it applied narrowly and did not grant citizenship. The Ponca Tribe of Nebraska was later terminated by Congress in the 1960s and restored in 1990. In 2019, Nebraska placed a statue of Standing Bear in the US Capitol."
+    },
+    "funFact": "Standing Bear's statue in the US Capitol's National Statuary Hall replaced one of William Jennings Bryan in 2019.",
+    "thenAndNow": "Then: Fort Omaha was an Army post where Standing Bear was held. Now: the fort's grounds are a Metropolitan Community College campus, and the Standing Bear Memorial Bridge crosses the Missouri River near Niobrara.",
+    "image": {
+      "status": "needs-sourcing",
+      "suggestedSearch": "Wikimedia Commons: Standing Bear Ponca portrait 1877 public domain",
+      "alt": "A black-and-white portrait of Ponca chief Standing Bear wearing a beaded necklace and a blanket over his shoulder.",
+      "credit": null,
+      "license": null,
+      "url": null
+    },
+    "sources": [
+      {
+        "publisher": "History Nebraska",
+        "title": "Standing Bear and the Ponca",
+        "url": "https://history.nebraska.gov/",
+        "needsSpecificUrl": true
+      },
+      {
+        "publisher": "Ponca Tribe of Nebraska",
+        "title": "Tribal history",
+        "url": "https://www.poncatribe-ne.org/"
+      }
+    ],
+    "standards": [
+      {
+        "framework": "NE-SS",
+        "strand": "History",
+        "likelyCourses": [
+          "Grade 8 US History",
+          "HS US History"
+        ],
+        "code": null,
+        "verified": false
+      },
+      {
+        "framework": "NE-SS",
+        "strand": "Civics",
+        "likelyCourses": [
+          "HS Civics/Government"
+        ],
+        "code": null,
+        "verified": false
+      }
+    ]
+  },
+  {
+    "id": "declaration-adopted",
+    "placeId": "philadelphia-pa",
+    "title": "The Declaration of Independence Is Adopted",
+    "year": 1776,
+    "dateLabel": "July 4, 1776",
+    "era": "revolutions",
+    "topics": [
+      "government-civics",
+      "conflict"
+    ],
+    "minBand": "6-12",
+    "sensitivity": "none",
+    "localConnection": null,
+    "summary": {
+      "k5": null,
+      "6-12": "In the summer of 1776, delegates from the thirteen colonies met in the Pennsylvania State House in Philadelphia as the Second Continental Congress. On July 2, they voted to break away from Great Britain. Two days later, on July 4, they approved the final wording of the Declaration of Independence, written mostly by Thomas Jefferson. It explained why the colonies were leaving and stated that \"all men are created equal\" with rights to \"Life, Liberty and the pursuit of Happiness.\" Most delegates signed the official copy on August 2. Those words did not apply to everyone at the time, but people have used them ever since to argue for equal rights.",
+      "adult": "Congress approved Richard Henry Lee's resolution for independence on July 2, 1776, then spent two days editing the committee draft prepared mainly by Jefferson, with input from John Adams and Benjamin Franklin. Delegates cut about a quarter of the text, including a passage blaming King George III for the slave trade, a deletion that pleased South Carolina and Georgia and that Jefferson resented. The document's grievances also included a charge that the king had incited \"merciless Indian Savages,\" a reminder of how differently Native nations, Loyalists, and enslaved people experienced the Revolution. Its opening principles later became a touchstone for abolitionists, the 1848 Seneca Falls Declaration of Sentiments, and the civil rights movement."
+    },
+    "funFact": "John Adams predicted that July 2, the day of the vote, would be the great American holiday celebrated with \"Pomp and Parade.\"",
+    "thenAndNow": "Then: the Pennsylvania State House, the seat of the colony's government. Now: Independence Hall, a UNESCO World Heritage Site visited by millions each year.",
+    "image": {
+      "status": "needs-sourcing",
+      "suggestedSearch": "Wikimedia Commons: Independence Hall Philadelphia exterior",
+      "alt": "A red brick building with white trim and a tall white bell tower, seen across a grassy square.",
+      "credit": null,
+      "license": null,
+      "url": null
+    },
+    "sources": [
+      {
+        "publisher": "National Archives",
+        "title": "The Declaration of Independence",
+        "url": "https://www.archives.gov/founding-docs/declaration"
+      },
+      {
+        "publisher": "National Park Service",
+        "title": "Independence National Historical Park",
+        "url": "https://www.nps.gov/inde/"
+      }
+    ],
+    "standards": [
+      {
+        "framework": "NE-SS",
+        "strand": "History",
+        "likelyCourses": [
+          "Grade 8 US History"
+        ],
+        "code": null,
+        "verified": false
+      },
+      {
+        "framework": "NE-SS",
+        "strand": "Civics",
+        "likelyCourses": [
+          "Grade 8",
+          "HS Civics/Government"
+        ],
+        "code": null,
+        "verified": false
+      }
+    ]
+  },
+  {
+    "id": "golden-spike",
+    "placeId": "promontory-ut",
+    "title": "The Golden Spike Joins the Transcontinental Railroad",
+    "year": 1869,
+    "dateLabel": "May 10, 1869",
+    "era": "expansion",
+    "topics": [
+      "transportation",
+      "settlement-migration",
+      "economics",
+      "indigenous-peoples",
+      "science-technology"
+    ],
+    "minBand": "6-12",
+    "sensitivity": "moderate",
+    "localConnection": "The Union Pacific began building west from Omaha, Nebraska, in 1863.",
+    "summary": {
+      "k5": null,
+      "6-12": "On May 10, 1869, two railroads met at Promontory Summit in Utah Territory. The Central Pacific had built east from Sacramento, California, through the Sierra Nevada mountains, using thousands of Chinese immigrant workers. The Union Pacific had built west from Omaha, Nebraska, across the Plains, with many Irish immigrants and Civil War veterans. Leaders tapped a ceremonial golden spike into place, and a telegraph operator sent one word across the country: \"DONE.\" A trip from coast to coast dropped from months to about a week. The railroad also brought settlers and hunters onto the Plains, speeding the destruction of the bison herds that Native nations depended on.",
+      "adult": "The Pacific Railway Act of 1862 gave both companies government bonds and millions of acres of land for every mile of track, which fueled both rapid construction and later scandal, including the Crédit Mobilier affair. Chinese workers made up most of the Central Pacific's labor force, did much of the dangerous blasting in the Sierra, and were paid less than white workers; they were left out of the famous ceremony photograph. On the Plains, the Union Pacific's route ran through Lakota and Cheyenne lands and sparked repeated conflict. The completed line knit together a national market, carried Homestead Act settlers west, and helped make Omaha a major rail and meatpacking hub."
+    },
+    "funFact": "Many books say the spike was driven at \"Promontory Point,\" but that is a peninsula in the Great Salt Lake more than 30 miles away. The real site is Promontory Summit.",
+    "thenAndNow": "Then: a temporary tent town with two locomotives nose to nose. Now: Golden Spike National Historical Park, where working replicas of the Jupiter and No. 119 locomotives reenact the meeting. The original gold spike is at Stanford University's Cantor Arts Center.",
+    "image": {
+      "status": "needs-sourcing",
+      "suggestedSearch": "Wikimedia Commons: East and West Shaking Hands at Laying Last Rail Andrew Russell 1869",
+      "alt": "A crowd of workers and officials stands between two steam locomotives that meet head to head on a single track.",
+      "credit": null,
+      "license": null,
+      "url": null
+    },
+    "sources": [
+      {
+        "publisher": "National Park Service",
+        "title": "Golden Spike National Historical Park",
+        "url": "https://www.nps.gov/gosp/"
+      }
+    ],
+    "standards": [
+      {
+        "framework": "NE-SS",
+        "strand": "History",
+        "likelyCourses": [
+          "Grade 8 US History",
+          "HS US History"
+        ],
+        "code": null,
+        "verified": false
+      },
+      {
+        "framework": "NE-SS",
+        "strand": "Geography",
+        "likelyCourses": [
+          "Grade 8",
+          "HS Geography"
+        ],
+        "code": null,
+        "verified": false
+      }
+    ]
+  },
+  {
+    "id": "montgomery-bus-boycott",
+    "placeId": "montgomery-al",
+    "title": "The Montgomery Bus Boycott",
+    "year": 1955,
+    "dateLabel": "December 1955 to December 1956",
+    "era": "cold-war",
+    "topics": [
+      "civil-rights",
+      "law-courts",
+      "government-civics"
+    ],
+    "minBand": "6-12",
+    "sensitivity": "moderate",
+    "localConnection": null,
+    "summary": {
+      "k5": null,
+      "6-12": "On December 1, 1955, Rosa Parks was arrested in Montgomery, Alabama, for refusing to give up her bus seat to a white passenger. Parks was an experienced civil rights activist and secretary of the local NAACP. Within days, the Women's Political Council, led by Jo Ann Robinson, printed thousands of flyers calling on Black residents to stay off the buses. A young pastor named Martin Luther King Jr. was chosen to lead the boycott. For 381 days, people walked, shared rides, and organized carpools, even as leaders' homes were bombed. The boycott ended in December 1956 after the US Supreme Court ruled that segregated buses were unconstitutional.",
+      "adult": "Parks's arrest was not the first. Nine months earlier, fifteen-year-old Claudette Colvin had been arrested for the same refusal, and organizers had been waiting for a case that could rally the community. The Women's Political Council mimeographed about 35,000 leaflets overnight, and the new Montgomery Improvement Association chose 26-year-old Martin Luther King Jr. as its president. Bus revenue collapsed as roughly 40,000 Black riders stayed off. The legal victory came through Browder v. Gayle, a federal suit whose plaintiffs were Aurelia Browder, Susie McDonald, Claudette Colvin, and Mary Louise Smith; the Supreme Court affirmed it in November 1956. The boycott made King a national figure and gave the movement a model of sustained, nonviolent mass action."
+    },
+    "funFact": "The Montgomery boycott borrowed ideas from a shorter bus boycott in Baton Rouge, Louisiana, in 1953.",
+    "thenAndNow": "Then: Court Square bus stop, where Parks boarded the Cleveland Avenue bus. Now: the Rosa Parks Museum stands near the spot where she was arrested.",
+    "image": {
+      "status": "needs-sourcing",
+      "suggestedSearch": "Wikimedia Commons: Rosa Parks booking photo 1956 OR Rosa Parks bus Henry Ford Museum",
+      "alt": "A vintage city bus with a rounded front, painted green and cream, parked indoors.",
+      "credit": null,
+      "license": null,
+      "url": null
+    },
+    "sources": [
+      {
+        "publisher": "Library of Congress",
+        "title": "Rosa Parks Papers",
+        "url": "https://www.loc.gov/collections/rosa-parks-papers/"
+      },
+      {
+        "publisher": "National Archives",
+        "title": "An Act of Courage: The Arrest Records of Rosa Parks",
+        "url": "https://www.archives.gov/education/lessons/rosa-parks"
+      }
+    ],
+    "standards": [
+      {
+        "framework": "NE-SS",
+        "strand": "History",
+        "likelyCourses": [
+          "HS US History"
+        ],
+        "code": null,
+        "verified": false
+      },
+      {
+        "framework": "NE-SS",
+        "strand": "Civics",
+        "likelyCourses": [
+          "HS Civics/Government"
+        ],
+        "code": null,
+        "verified": false
+      }
+    ]
+  },
+  {
+    "id": "apollo-11-launch",
+    "placeId": "ksc-fl",
+    "title": "Apollo 11 Launches to the Moon",
+    "year": 1969,
+    "dateLabel": "July 16, 1969",
+    "era": "cold-war",
+    "topics": [
+      "science-technology",
+      "exploration",
+      "cold-war"
+    ],
+    "minBand": "6-12",
+    "sensitivity": "none",
+    "localConnection": null,
+    "summary": {
+      "k5": null,
+      "6-12": "On the morning of July 16, 1969, a Saturn V rocket lifted off from Launch Complex 39A at Kennedy Space Center in Florida. On board were Neil Armstrong, Buzz Aldrin, and Michael Collins. Four days later, on July 20, Armstrong and Aldrin landed on the Moon while Collins orbited above. About 600 million people around the world watched on television. The mission was the high point of the Space Race, a Cold War competition between the United States and the Soviet Union. It depended on hundreds of thousands of workers, including mathematicians, engineers, and seamstresses who sewed the spacesuits by hand.",
+      "adult": "President Kennedy's 1961 challenge to land a man on the Moon \"before this decade is out\" was a Cold War answer to Soviet firsts, including Sputnik and Yuri Gagarin's orbit. Apollo cost about $25 billion at the time and drew criticism from people who argued the money was needed at home; civil rights leaders led a protest march at the launch site the day before liftoff. The work was spread across the country: the Saturn V was developed in Huntsville, Alabama; Mission Control operated from Houston; and the launch took place on Florida's Atlantic coast, where launching east over the ocean added speed from Earth's rotation and kept falling stages away from towns. The plaque left on the Moon reads, \"We came in peace for all mankind.\""
+    },
+    "funFact": "Launch Complex 39A later launched Space Shuttle missions and, starting in 2017, SpaceX rockets.",
+    "thenAndNow": "Then: a brand-new launch pad built on marsh and scrubland. Now: Kennedy Space Center is still an active spaceport, and its visitor complex displays a real Saturn V rocket.",
+    "image": {
+      "status": "needs-sourcing",
+      "suggestedSearch": "NASA Image Library: Apollo 11 launch Saturn V July 16 1969 (NASA images are generally public domain)",
+      "alt": "A tall white rocket rises from a launch tower on a column of bright flame and billowing smoke.",
+      "credit": null,
+      "license": null,
+      "url": null
+    },
+    "sources": [
+      {
+        "publisher": "NASA",
+        "title": "Apollo 11 mission overview",
+        "url": "https://www.nasa.gov/mission/apollo-11/"
+      }
+    ],
+    "standards": [
+      {
+        "framework": "NE-SS",
+        "strand": "History",
+        "likelyCourses": [
+          "HS US History"
+        ],
+        "code": null,
+        "verified": false
+      }
+    ]
+  },
+  {
+    "id": "rosetta-stone-found",
+    "placeId": "rashid-eg",
+    "title": "The Rosetta Stone Is Discovered",
+    "year": 1799,
+    "dateLabel": "July 1799",
+    "era": "revolutions",
+    "topics": [
+      "archaeology",
+      "conflict"
+    ],
+    "minBand": "6-12",
+    "sensitivity": "none",
+    "localConnection": null,
+    "summary": {
+      "k5": null,
+      "6-12": "In July 1799, French soldiers in Egypt were rebuilding an old fort near the town of Rashid, which Europeans called Rosetta. They dug up a broken slab of dark stone covered in writing. The same message was carved three times: in Egyptian hieroglyphs, in a later Egyptian script called Demotic, and in ancient Greek. Scholars could already read Greek, so they used it as a key to figure out the hieroglyphs. In 1822, a French scholar named Jean-François Champollion announced that he had cracked the code, opening up thousands of years of Egyptian history. Today the stone is in the British Museum in London.",
+      "adult": "In July 1799, French soldiers rebuilding a fort near the Nile Delta town of Rashid uncovered a broken slab carved with the same decree in three scripts: hieroglyphic, Demotic, and ancient Greek. Because scholars could read the Greek, the stone became the key to deciphering hieroglyphs, a breakthrough Jean-François Champollion announced in 1822. The British took the stone in 1801 under the terms of the French surrender, and it has been in the British Museum ever since. Egypt has asked more than once for it to be returned, which keeps it at the center of debates about who should own cultural heritage."
+    },
+    "funFact": "The decree on the stone is fairly ordinary: a priests' announcement from 196 BCE honoring the young king Ptolemy V.",
+    "thenAndNow": "Then: rubble reused in a fort wall during Napoleon's invasion of Egypt. Now: one of the most visited objects in the British Museum, and the namesake of a famous language-learning brand.",
+    "image": {
+      "status": "needs-sourcing",
+      "suggestedSearch": "Wikimedia Commons: Rosetta Stone British Museum",
+      "alt": "A dark gray stone slab with a jagged top edge, covered in three bands of carved writing.",
+      "credit": null,
+      "license": null,
+      "url": null
+    },
+    "sources": [
+      {
+        "publisher": "British Museum",
+        "title": "The Rosetta Stone (EA24)",
+        "url": "https://www.britishmuseum.org/collection/object/Y_EA24"
+      },
+      {
+        "publisher": "Smithsonian Magazine",
+        "title": "Articles on the Rosetta Stone and Champollion",
+        "url": "https://www.smithsonianmag.com/",
+        "needsSpecificUrl": true
+      }
+    ],
+    "standards": [
+      {
+        "framework": "NE-SS",
+        "strand": "History",
+        "likelyCourses": [
+          "HS World History"
+        ],
+        "code": null,
+        "verified": false
+      }
+    ]
+  },
+  {
+    "id": "berlin-wall-falls",
+    "placeId": "berlin-de",
+    "title": "The Berlin Wall Opens",
+    "year": 1989,
+    "dateLabel": "November 9, 1989",
+    "era": "cold-war",
+    "topics": [
+      "cold-war",
+      "government-civics",
+      "conflict"
+    ],
+    "minBand": "6-12",
+    "sensitivity": "moderate",
+    "localConnection": null,
+    "summary": {
+      "k5": null,
+      "6-12": "After World War II, Germany was split into a democratic West and a communist East. Berlin, deep inside East Germany, was split too. In 1961, East Germany built a wall around West Berlin to stop people from escaping. For 28 years, families were separated, and at least 140 people were killed at the wall. On the evening of November 9, 1989, an East German official mistakenly announced on live TV that new travel rules took effect \"immediately.\" Thousands of East Berliners rushed to the checkpoints, and overwhelmed guards opened the gates. People climbed on the wall, hugged strangers, and chipped off pieces. Less than a year later, Germany was reunited.",
+      "adult": "By late 1989, East Germany faced mass protests in Leipzig and a wave of citizens fleeing through Hungary and Czechoslovakia. The Politburo drafted looser travel rules, but spokesman Günter Schabowski, who had not been fully briefed, told reporters they applied \"immediately, without delay.\" Crowds gathered at the Bornholmer Strasse crossing, and around 11:30 p.m. the officer in charge opened the gate rather than risk violence. Soviet leader Mikhail Gorbachev chose not to intervene, a sharp break from the crackdowns of 1953, 1956, and 1968. Germany reunified on October 3, 1990, and the Soviet Union dissolved a year after that, ending the Cold War order the wall had symbolized."
+    },
+    "funFact": "A double row of cobblestones now traces much of the wall's former path through the center of Berlin.",
+    "thenAndNow": "Then: concrete walls, a guarded \"death strip,\" and watchtowers. Now: the Berlin Wall Memorial on Bernauer Strasse and the East Side Gallery, a stretch of wall covered in murals.",
+    "image": {
+      "status": "needs-sourcing",
+      "suggestedSearch": "Wikimedia Commons: Berlin Wall Brandenburg Gate November 1989 crowd",
+      "alt": "Crowds of people stand on top of a graffiti-covered concrete wall at night, with a large columned gate behind them.",
+      "credit": null,
+      "license": null,
+      "url": null
+    },
+    "sources": [
+      {
+        "publisher": "Berlin Wall Foundation",
+        "title": "Berlin Wall Memorial",
+        "url": "https://www.stiftung-berliner-mauer.de/en"
+      }
+    ],
+    "standards": [
+      {
+        "framework": "NE-SS",
+        "strand": "History",
+        "likelyCourses": [
+          "HS World History",
+          "HS US History"
+        ],
+        "code": null,
+        "verified": false
+      }
+    ]
+  },
+  {
+    "id": "machu-picchu-built",
+    "placeId": "machu-picchu-pe",
+    "title": "The Inca Build Machu Picchu",
+    "year": 1450,
+    "dateLabel": "About 1450",
+    "era": "early-modern",
+    "topics": [
+      "architecture",
+      "indigenous-peoples",
+      "world-heritage",
+      "archaeology"
+    ],
+    "minBand": "6-12",
+    "sensitivity": "none",
+    "localConnection": null,
+    "summary": {
+      "k5": null,
+      "6-12": "Around 1450, the Inca emperor Pachacuti ordered a royal estate built on a narrow mountain ridge high in the Andes of Peru, about 8,000 feet above sea level. Inca builders cut granite blocks so precisely that they fit together without mortar, and they carved farming terraces into the steep slopes. The site was used for less than a century and was mostly abandoned around the time of the Spanish conquest. The Spanish never found it. In 1911, local farmers guided American explorer Hiram Bingham to the ruins, and his photographs made Machu Picchu famous around the world, even though people living nearby had always known it was there.",
+      "adult": "Machu Picchu was likely a royal retreat for Pachacuti, the ruler who expanded the Inca state into an empire, rather than a city or fortress. Its builders handled earthquakes and heavy rain with fitted ashlar stonework, trapezoidal doorways, and an extensive hidden drainage system beneath the terraces. Because the Spanish never reached it, the site escaped the destruction that hit Cusco's temples. Hiram Bingham's 1911 Yale expedition, guided by farmer Melchor Arteaga and families already farming the terraces, removed thousands of artifacts; after a long dispute, Yale returned them to Peru beginning in 2011. UNESCO listed the site in 1983, and Peru now limits daily visitors to reduce damage from tourism."
+    },
+    "funFact": "Some researchers argue the Inca did not call the site Machu Picchu at all, and that its original name was closer to \"Huayna Picchu\" or simply \"Picchu.\"",
+    "thenAndNow": "Then: a royal estate with temples, houses, and terraces for a few hundred people. Now: Peru's most visited site, reached by train and bus or by hiking the Inca Trail.",
+    "image": {
+      "status": "needs-sourcing",
+      "suggestedSearch": "Wikimedia Commons: Machu Picchu panorama Huayna Picchu",
+      "alt": "Gray stone ruins and green terraces spread across a mountain ridge, with a steep green peak rising behind them in the clouds.",
+      "credit": null,
+      "license": null,
+      "url": null
+    },
+    "sources": [
+      {
+        "publisher": "UNESCO World Heritage Centre",
+        "title": "Historic Sanctuary of Machu Picchu",
+        "url": "https://whc.unesco.org/en/list/274"
+      }
+    ],
+    "standards": [
+      {
+        "framework": "NE-SS",
+        "strand": "History",
+        "likelyCourses": [
+          "Grades 6-7 World Studies",
+          "HS World History"
+        ],
+        "code": null,
+        "verified": false
+      },
+      {
+        "framework": "NE-SS",
+        "strand": "Geography",
+        "likelyCourses": [
+          "Grades 6-7",
+          "HS Geography"
+        ],
+        "code": null,
+        "verified": false
+      }
+    ]
+  },
+  {
+    "id": "taj-mahal-built",
+    "placeId": "agra-in",
+    "title": "The Taj Mahal Is Built",
+    "year": 1632,
+    "dateLabel": "About 1632 to 1653",
+    "era": "early-modern",
+    "topics": [
+      "architecture",
+      "world-heritage"
+    ],
+    "minBand": "6-12",
+    "sensitivity": "none",
+    "localConnection": null,
+    "summary": {
+      "k5": null,
+      "6-12": "In 1631, Mumtaz Mahal, the wife of the Mughal emperor Shah Jahan, died giving birth to their fourteenth child. Heartbroken, Shah Jahan ordered a tomb for her on the banks of the Yamuna River in Agra, India. About 20,000 workers, including stonecutters, painters, and calligraphers from across India, Persia, and Central Asia, spent around twenty years building it. The tomb is made of white marble inlaid with colorful stones that form flowers, along with verses from the Quran written in flowing calligraphy. Today the Taj Mahal is one of the most recognized buildings on Earth and a symbol of India.",
+      "adult": "The Taj Mahal complex blends Persian, Central Asian, and Indian traditions into one carefully symmetrical plan: a gateway, a garden divided into four parts by water channels, a mosque and a matching guesthouse, and the domed tomb on a raised platform. White marble came from Makrana in Rajasthan, and artisans set carnelian, jasper, lapis lazuli, and other stones into it with a technique known as pietra dura. The project strained the treasury. In 1658 Shah Jahan's son Aurangzeb seized the throne and confined his father in Agra Fort, from which he could see the tomb across the river. When Shah Jahan died in 1666, he was buried beside Mumtaz, the only asymmetrical element in the whole design."
+    },
+    "funFact": "The four minarets lean very slightly outward, so that in an earthquake they would fall away from the tomb instead of onto it.",
+    "thenAndNow": "Then: a private royal tomb and garden. Now: a UNESCO World Heritage Site, where air pollution yellowing the marble has led India's courts to restrict industry in the surrounding area.",
+    "image": {
+      "status": "needs-sourcing",
+      "suggestedSearch": "Wikimedia Commons: Taj Mahal south view reflecting pool",
+      "alt": "A white marble domed building with four slender towers, reflected in a long rectangular pool lined with trees.",
+      "credit": null,
+      "license": null,
+      "url": null
+    },
+    "sources": [
+      {
+        "publisher": "UNESCO World Heritage Centre",
+        "title": "Taj Mahal",
+        "url": "https://whc.unesco.org/en/list/252"
+      }
+    ],
+    "standards": [
+      {
+        "framework": "NE-SS",
+        "strand": "History",
+        "likelyCourses": [
+          "Grades 6-7 World Studies",
+          "HS World History"
+        ],
+        "code": null,
+        "verified": false
+      }
+    ]
+  }
+]

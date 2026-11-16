@@ -1,0 +1,12 @@
+[
+  { "id": "beatrice-ne", "name": "Homestead National Historical Park, near Beatrice", "admin": "Nebraska", "country": "United States", "region": "us-plains", "plains": true, "lat": 40.2858, "lng": -96.8456 },
+  { "id": "omaha-ne", "name": "Omaha", "admin": "Nebraska", "country": "United States", "region": "us-plains", "plains": true, "lat": 41.2565, "lng": -95.9345 },
+  { "id": "philadelphia-pa", "name": "Independence Hall, Philadelphia", "admin": "Pennsylvania", "country": "United States", "region": "us-northeast", "plains": false, "lat": 39.9489, "lng": -75.1500 },
+  { "id": "promontory-ut", "name": "Promontory Summit", "admin": "Utah", "country": "United States", "region": "us-west", "plains": false, "lat": 41.6181, "lng": -112.5517 },
+  { "id": "montgomery-al", "name": "Montgomery", "admin": "Alabama", "country": "United States", "region": "us-south", "plains": false, "lat": 32.3771, "lng": -86.3092 },
+  { "id": "ksc-fl", "name": "Kennedy Space Center, Merritt Island", "admin": "Florida", "country": "United States", "region": "us-south", "plains": false, "lat": 28.6083, "lng": -80.6041 },
+  { "id": "rashid-eg", "name": "Rashid (Rosetta)", "admin": "Beheira Governorate", "country": "Egypt", "region": "africa", "plains": false, "lat": 31.4044, "lng": 30.4164 },
+  { "id": "berlin-de", "name": "Berlin", "admin": "Berlin", "country": "Germany", "region": "europe", "plains": false, "lat": 52.5163, "lng": 13.3777 },
+  { "id": "machu-picchu-pe", "name": "Machu Picchu", "admin": "Cusco Region", "country": "Peru", "region": "south-america", "plains": false, "lat": -13.1631, "lng": -72.5450 },
+  { "id": "agra-in", "name": "Agra", "admin": "Uttar Pradesh", "country": "India", "region": "asia", "plains": false, "lat": 27.1751, "lng": 78.0421 }
+]
